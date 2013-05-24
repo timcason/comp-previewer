@@ -35,7 +35,7 @@ $long = strlen($dir);
 		<?php 
 		$x=0;
 		foreach($images as $img){  ?>
-			<li><a href="<?php echo $img; ?> " rel="address:/<?=$x?>"><?php echo substr($img,$long); ?></a></li>
+			<li><a href="<?php echo $img; ?> " rel="address:/<?=$x?>"><?php echo substr($img,$long, -4); ?></a></li>
 	   <?php $x++;	}  ?>
            
 		</ul>
